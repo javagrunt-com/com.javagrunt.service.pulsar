@@ -9,7 +9,7 @@ import org.testcontainers.containers.PulsarContainer;
 import org.testcontainers.utility.DockerImageName;
 
 @TestConfiguration(proxyBeanMethods = false)
-public class TestPulsarApplication {
+public class TestApplication {
 
 	@Bean
 	@ServiceConnection
@@ -24,7 +24,7 @@ public class TestPulsarApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.from(PulsarApplication::main).with(TestPulsarApplication.class).run(args);
+		SpringApplication.from(Application::main).with(TestApplication.class).run(args);
 	}
 
 }

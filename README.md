@@ -2,11 +2,17 @@
  [![Stargazers][stars-shield]][stars-url]
  [![Issues][issues-shield]][issues-url]
 
- # Project Name
+ # Spring Pulsar - Example
 
  ## Prerequisites
 
+ - Java 17 (Java 21 preferred)
+
  ## Quick Start
+
+```bash
+./mvnw spring-boot:test-run
+```
 
  ## Attributions
 
